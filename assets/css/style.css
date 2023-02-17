@@ -103,23 +103,39 @@ figure {
    color: black;
 }
 
+.container ul {
+    list-style-type: none;
+    display: flex;
+    text-align: center;
+}
 .card-gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 50px;
     justify-content: center;
 }
 
 .card-gallery li {
-    flex-basis: 350px;
+    flex-basis: 450px;
 }
 
 .cardImg {
-   object-fit: cover;
+   object-fit: fill;
    max-width: 100%;
-   height: auto;
-   vertical-align: middle;    
+   height: 200px;
+   vertical-align: middle; 
+    
    border-radius: 5px;
+}
+
+.show-more-btn {
+    color: black;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.contentBtns {
+    display: block;
 }
 
 
@@ -138,8 +154,8 @@ footer {
     font-size: 20px;
 }
 
-#footerhome a {
-    text-decoration-line: underline
+#footerHome a {
+    text-decoration-line: underline;
     color: white;
     font-size: 30px;
 }
@@ -164,9 +180,10 @@ footer {
 /* Links inside the dropdown */
 .dropdown-content li a {
     color: rgb(0, 0, 0);
-    padding: 12px 16px;
+    padding: 10px;
     text-decoration: none;
     display: block;
+    font-size: 20px;
 }
    
 /* Show the dropdown menu on hover */
@@ -176,12 +193,12 @@ footer {
     position: absolute;
     top: 50px;
     left: 0px;
-    background-color: red;
-    width: 500px;
+    background-color: rgb(173, 171, 171);
+    width: 350px;
     height: auto;
 }
 .dropdown-content li:hover a {
-    color: green;
+    color: rgb(249, 249, 249);
 }
 
 
@@ -211,4 +228,11 @@ footer {
     .col {
         width: 100%;
     }
+    .cardImg {
+        object-fit: cover;
+        max-width: 100%;
+        height: auto;
+        vertical-align: middle;    
+        border-radius: 5px;
+     }
 }
