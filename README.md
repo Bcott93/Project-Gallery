@@ -29,6 +29,14 @@ Once I was confident I knew how to do that, the rest was using my GitHub repo to
 
 ### Building & Debugging
 
+I started by adding a title, a placement nav bar (I will consider dynamically adding the Nav Bar for each project, so that I can add to the code at a later date), a hero image and placement text for the projects. 
+
+I then tested the CSS Flexbox (credits to resources below) to ensure that it worked. Once I was happy that with the placement of the cards, I started adding data and images from my GitHub. I confirmed the responsiveness once the information was added. 
+
+I added button elements for individual links to the repo and deployment of each project, I also considered adding the buttons using JavaScript, but I didn't seem worthwhile as there was no need for dynically created elements.  
+
+I completed added a Show More button to the bottom of each card, and used a JavaScript loop to hide all the information until the button is pressed. Once its pressed, the data shows in "block" format and button text changes to Show Less. The loop added this to all the projects. As it is dynamic, more projects can be added without the need for code amendments. 
+
 
 
 ## Usage
@@ -37,6 +45,9 @@ To view the project, please follow the links below:
 
 https://bcott93.github.io/Project-Gallery/
 
+
+
+
 ![Sample of the Application]()
 
 ## License
@@ -44,6 +55,9 @@ https://bcott93.github.io/Project-Gallery/
 Please see the License in the Repo.
 
 ## Credits
-
+https://github.com/Bcott93?tab=repositories
 https://learn.foundersandcoders.com/course/syllabus/application/project-gallery/project/ 
+https://blog.logrocket.com/responsive-image-gallery-css-flexbox/
+https://www.w3schools.com/css/css_dropdowns.asp
+https://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery
 

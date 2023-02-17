@@ -1,3 +1,5 @@
+/* Global Styling */
+
 * {
     box-sizing: border-box;
 }
@@ -9,12 +11,63 @@ html, body, div, img {
     font: inherit;
     vertical-align: baseline;
 }
+
+/* Body Styling */
+
 body {
     line-height: 1;
 }
 
+/* Header Styling */
+
+
+/* Figure Styling */
+
+figure {
+    margin: 0px;
+    margin-block: 0px;
+    height: 70vh;
+}
+
+
+/* Hero Styling */
+.hero {
+    height: 70vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-size: 100%;
+    background-position: center;
+}
+
+/* Flex Box Styling */
+
 .container {
+   color: black;
+}
+
+.card-gallery {
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.card-gallery li {
+    flex-basis: 350px;
+}
+
+.cardImg {
+   object-fit: cover;
+   max-width: 100%;
+   height: auto;
+   vertical-align: middle;    
+   border-radius: 5px;
+}
+
+/* Read More Styling */
+
+#read-more-content {
+    display: none;
 }
 
