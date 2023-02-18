@@ -24,8 +24,6 @@ header {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #5f5a5a;
     color: #ffffff;
-    /* display: flex;
-    flex-direction: column; */
     align-items: center;
     margin: 0;
     }
@@ -106,8 +104,9 @@ figure {
 .container ul {
     list-style-type: none;
     display: flex;
-    text-align: center;
+  
 }
+
 .card-gallery {
     display: flex;
     flex-wrap: wrap;
@@ -122,20 +121,80 @@ figure {
 .cardImg {
    object-fit: fill;
    max-width: 100%;
-   height: 200px;
+   height: 250px;
    vertical-align: middle; 
-    
    border-radius: 5px;
+   justify-content: center;
 }
 
 .show-more-btn {
     color: black;
-    font-size: 20px;
+    font-size: 17px;
     margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    object-fit: fill;
+    border-color: black;
 }
 
-.contentBtns {
+.show-more-btn:hover {
+    background-color: #6e6e6e;
+}
+
+.card h2 {
+    text-align: center;
+    font-size: 28px;
+}
+
+.contentLinks a:hover {
+    background-color: #6e6e6e;
+}
+
+.contentLinks a {
     display: block;
+    width: 100%;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-width: 1px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+    margin-top: 5px;
+    text-align: center;
+    padding-top: 2px;  
+}
+
+
+.show-more-content {
+    font-size: 20px;
+    margin-bottom: 20px;
+   
+}
+
+
+
+.weather-attributes {
+    margin-left: 0;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.weather-attributes li {
+    flex-basis: 55px;
+}
+
+.sub-weather-attributes {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: initial;
+}
+
+.sub-weather-attributes li {
+    padding-top: 5px;
+    flex-basis: 30px;
+    list-style-type: circle;
 }
 
 
@@ -146,7 +205,7 @@ figure {
 footer {
     text-align: center;
     background-color: black;
-    padding: 64px 0px;
+    padding: 25px 0px;
     color: white;
 }
 
@@ -155,9 +214,9 @@ footer {
 }
 
 #footerHome a {
-    text-decoration-line: underline;
     color: white;
-    font-size: 30px;
+    font-size: 20px;
+    display: block;
 }
 
 
@@ -168,7 +227,6 @@ footer {
 
 .dropdown li {
     position: relative;
-    display: inline-block;
 }
   
 /* Dropdown Content */
@@ -234,5 +292,10 @@ footer {
         height: auto;
         vertical-align: middle;    
         border-radius: 5px;
+        margin-right: 40px
+     }
+     .card-gallery {
+        flex-basis: 200px;
+        margin-right: 40px;
      }
 }

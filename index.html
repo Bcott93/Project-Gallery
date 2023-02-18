@@ -17,12 +17,9 @@
         <div class="col">
           <div class="topnav">
             <ul class="nav">
-              <li>
-                <a href="#home">Home</a>
-              </li>
               <li class="dropdown">
                 <a>My Projects</a>
-
+                
                 <ul class="dropdown-content">
                   <li><a href="#card-1"> Hobby Page </a></li>
                   <li><a href="#card-2">Weather Dashboard</a></li>
@@ -64,28 +61,29 @@
                 The goal was to create a Hobby Page, discussing a particular
                 interest. The idea was to showcase HTML, CSS and simple
                 JavaScript.
+
+                I chose Formula One.
               </p>
-              <div class="contentBtns">
-                <button>
-                  <a
+              <div class="contentLinks">
+                                  <a
                     href="https://github.com/Bcott93/Hobby-Page"
                     target="_blank"
-                    >See the Repo</a
-                  >
-                </button>
-                <button>
+                    >Github Repository</a
+                  >     
+              
+               
                   <a
                     href="https://bcott93.github.io/Hobby-Page/"
                     target="_blank"
-                    >See the deployment</a
+                    > Live site</a
                   >
-                </button>
+               
               </div>
             </div>
           </div>
         </li>
         <li id="card-2" class="card">
-          <h2>Weather Dashboard</h2>
+          <h2 class="noList">Weather Dashboard</h2>
           <img
             src="./assets/images/Weather-Dashboard.jpg"
             alt=""
@@ -94,31 +92,37 @@
           <div class="dropdown">
             <button class="show-more-btn"></button>
             <div class="show-more-content">
-              <p>
-                The objective was to present a 5 day weather forecast of a user
-                defined City. The important aspects were: - Using OpenWeather
-                API to retrieve the location and weather. - Show multiple
-                weather attributes: - The city name - The date - The temperature
-                - The icon showing the current weather - The humidity - The wind
-                speed - Once a search has been completed, save it in a history
-                tab.
-              </p>
+                <p class="weather-content">
+                    The objective was to present a 5 day weather forecast of a user-defined city.
+                    <ul class="weather-attributes">
+                      <li>I used OpenWeatherAPI to retrieved the location and the weather. I was then able to show multiple weather attributes, including:
+                      </li>
+                      <ul class="sub-weather-attributes">
+                        <li>The city name,</li>
+                        <li>The date,</li>
+                        <li>The temperature,</li>
+                        <li>The icon showing the current weather,</li>
+                        <li>The humidity,</li>
+                        <li>The wind speed.</li>
+                      </ul>
+                      <li>Once a search had been completed, it was saved in the history tab.</li>
+                    </ul>
+                  </p>
 
-              <div class="contentBtns">
-                <button>
+              <div class="contentLinks">
+              
                   <a
                     href="https://github.com/Bcott93/Weather-Dashboard"
                     target="_blank"
-                    >See the Repo</a
+                    >Github Repository</a
                   >
-                </button>
-                <button>
+              
                   <a
                     href="https://bcott93.github.io/Weather-Dashboard/"
                     target="_blank"
-                    >See the deployment</a
+                    >Live site</a
                   >
-                </button>
+              
               </div>
             </div>
           </div>
@@ -148,21 +152,20 @@
                 workflow: - Github - Visual Studio Code - JavaScript - HTML -
                 CSS - Bootstrap
               </p>
-              <div class="contentBtns">
-                <button>
+              <div class="contentLinks">
+               
                   <a
                     href="https://github.com/ResonantDevotion/MovieSlashCocktailParty"
                     target="_blank"
-                    >See the Repo</a
+                    >Github Repository</a
                   >
-                </button>
-                <button>
+               
                   <a
                     href="https://resonantdevotion.github.io/MovieSlashCocktailParty/"
                     target="_blank"
-                    >See the deployment</a
+                    >Live site</a
                   >
-                </button>
+               
               </div>
             </div>
           </div>
@@ -188,21 +191,20 @@
                 that it was commented in a way which enables other developers to
                 take over if required.
               </p>
-              <div class="contentBtns">
-                <button>
+              <div class="contentLinks">
+              
                   <a
                     href="https://github.com/Bcott93/Console-Finances"
                     target="_blank"
-                    >See the Repo</a
+                    >Github Repository</a
                   >
-                </button>
-                <button>
+               
                   <a
                     href="https://bcott93.github.io/Console-Finances/"
                     target="_blank"
-                    >See the deployment</a
+                    >Live site</a
                   >
-                </button>
+              
               </div>
             </div>
           </div>
@@ -230,21 +232,20 @@
                 commented in a way which enables other developers to take over
                 if required.
               </p>
-              <div class="contentBtns">
-                <button>
+              <div class="contentLinks">
+           
                   <a
                     href="https://github.com/Bcott93/Password-Generator"
                     target="_blank"
-                    >See the Repo</a
+                    >Github Repository</a
                   >
-                </button>
-                <button>
+             
                   <a
                     href="https://bcott93.github.io/Password-Generator/"
                     target="_blank"
-                    >See the deployment</a
+                    >Live site</a
                   >
-                </button>
+            
               </div>
             </div>
           </div>
@@ -256,21 +257,20 @@
             <button class="show-more-btn"></button>
             <div class="show-more-content">
               <p>Place Holder</p>
-              <div class="contentBtns">
-                <button>
+              <div class="contentLinks">
+             
                   <a
                     href="https://github.com/Bcott93/Password-Generator"
                     target="_blank"
-                    >See the Repo</a
+                    >Github Repository</a
                   >
-                </button>
-                <button>
+              
                   <a
                     href="https://bcott93.github.io/Password-Generator/"
                     target="_blank"
-                    >See the deployment</a
+                    >Live site</a
                   >
-                </button>
+            
               </div>
             </div>
           </div>
@@ -279,7 +279,7 @@
     </div>
     <!-- Footer for owner credit  -->
     <footer>
-      <h2 id="footerHome"><a href="#header">Take me home!</a></h2>
+      <h5 id="footerHome"><a href="#header">Home</a></h5>
       <div class="creators">
         Created by
         <a href="https://github.com/Bcott93" target="_blank"
