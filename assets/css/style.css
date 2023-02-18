@@ -115,13 +115,13 @@ figure {
 }
 
 .card-gallery li {
-    flex-basis: 450px;
+    flex-basis: 25%;
 }
 
 .cardImg {
    object-fit: fill;
    max-width: 100%;
-   height: 250px;
+   height: 30vh;
    vertical-align: middle; 
    border-radius: 5px;
    justify-content: center;
@@ -162,7 +162,7 @@ figure {
     margin-top: 5px;
     text-align: center;
     padding-top: 2px;  
-}
+} 
 
 
 .show-more-content {
@@ -260,6 +260,50 @@ footer {
 }
 
 
+
+
+@media screen and (max-width: 1050px) {
+    #date {
+        position: static;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 30px;
+        line-height: 55px;
+        text-align: center;
+    }
+    figure {
+        height: 30vh;
+    }
+    .hero {
+        height: 30vh;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .col {
+        width: 100%;
+    }
+    .cardImg {
+        object-fit: cover;
+        max-width: 100%;
+        height: auto;
+        vertical-align: middle;    
+        border-radius: 5px;
+        margin-right: 30px
+     }
+     .card-gallery {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 5%;
+     }
+}
+
 @media screen and (max-width: 767px) {
     #date {
         position: static;
@@ -292,10 +336,118 @@ footer {
         height: auto;
         vertical-align: middle;    
         border-radius: 5px;
-        margin-right: 40px
-     }
-     .card-gallery {
-        flex-basis: 200px;
         margin-right: 40px;
      }
+     .card-gallery {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 60px;
+     }
+}
+@media screen and (max-width: 480px) {
+    #date {
+        position: static;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 30px;
+        line-height: 55px;
+        text-align: center;
+    }
+    figure {
+        height: 30vh;
+    }
+    .hero {
+        height: 30vh;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .col {
+        width: 100%;
+    }
+    .cardImg {
+        object-fit: cover;
+        max-width: 350px;
+        height: auto;
+        vertical-align: middle;    
+        border-radius: 5px;
+        margin: 0 auto;
+     }
+     .card-gallery {
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+     }
+
+     .contentLinks a, .show-more-btn {
+        max-width: 350px;
+        margin: 0 auto;
+     }
+     .card h2 {
+        text-align: left;
+     }
+     footer {
+        margin-top: 10px;
+     }
+}
+
+@media screen and (max-width: 400px) {
+    #date {
+        position: static;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 30px;
+        line-height: 55px;
+        text-align: center;
+    }
+    figure {
+        height: 30vh;
+    }
+    .hero {
+        height: 30vh;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .col {
+        width: 100%;
+    }
+    .cardImg {
+        object-fit: cover;
+        max-width: 300px;
+        height: auto;
+        vertical-align: middle;    
+        border-radius: 5px;
+        /* margin: 0 auto; */
+     }
+     .card-gallery {
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+        /* margin: 0 auto; */
+     }
+
+     .contentLinks a, .show-more-btn {
+        max-width: 300px;
+        /* margin: 0 auto; */
+     }
+     .card h2 {
+        text-align: left;
+     }
+     footer {
+        margin-top: 10px;
+     }
+
 }
