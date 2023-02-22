@@ -1,4 +1,4 @@
-# Project-Gallery - Founders & Coders
+# Project-Gallery
 
 To produce a basic project gallery using HTML and CSS.
 
