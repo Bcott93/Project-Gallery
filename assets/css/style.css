@@ -48,17 +48,20 @@ header h1 {
 }
 
 /* Style the links inside the navigation bar */
+
 .topnav a {
   float: left;
   color: #020202;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 10px;
   text-decoration: none;
   font-size: 25px;
 }
 
 .nav {
   display: flex;
+  text-align: center;
+  justify-content: center;
   flex-direction: row;
   gap: 10px;
 }
@@ -66,6 +69,10 @@ header h1 {
 .nav li {
   list-style-type: none;
   padding-left: 0;
+}
+
+.nav :hover {
+  background-color: blue;
 }
 
 #date {
@@ -77,6 +84,27 @@ header h1 {
   color: white;
   padding-bottom: 15px;
   padding-top: 0;
+}
+
+/* About & Contact Styling */
+#about-header,
+#contact-header {
+  float: left;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.section-heading {
+  text-align: center;
+  font-size: 50px;
+}
+
+.sectionImg {
+  margin-right: 10%;
+  max-width: 100%;
+  height: 30vh;
+  vertical-align: middle;
+  justify-content: center;
 }
 
 /* Headline Styling */
@@ -235,7 +263,7 @@ footer {
 /* Links inside the dropdown */
 .dropdown-content li a {
   color: rgb(0, 0, 0);
-  padding: 10px;
+  padding: 7px;
   text-decoration: none;
   display: block;
   font-size: 20px;
@@ -276,19 +304,37 @@ footer {
   .col {
     width: 100%;
   }
+
+  .sectionImg {
+    display: none;
+  }
+  .headline {
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  .headline img {
+    width: 100%;
+    margin: 0;
+  }
+
+  .card {
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
   .cardImg {
-    object-fit: cover;
-    max-width: 100%;
+    width: 100%;
     height: auto;
     vertical-align: middle;
-    border-radius: 5px;
-    margin-right: 30px;
+    margin: 0;
   }
+
   .card-gallery {
     flex-basis: 100%;
     display: flex;
     flex-direction: column;
-    margin-right: 110px;
+    margin-right: 55px;
   }
 }
 
@@ -298,14 +344,11 @@ footer {
     margin-top: 20px;
     text-align: center;
   }
-
   h1 {
     font-size: 30px;
     line-height: 55px;
     text-align: center;
   }
-
-
   .row {
     display: flex;
     flex-direction: column;
@@ -313,7 +356,9 @@ footer {
   .col {
     width: 100%;
   }
-  .cardImg {
+  .cardImg,
+  .headline img,
+  .headline {
     object-fit: cover;
     max-width: 100%;
     height: auto;
@@ -334,13 +379,11 @@ footer {
     margin-top: 20px;
     text-align: center;
   }
-
   h1 {
     font-size: 30px;
     line-height: 55px;
     text-align: center;
   }
-
   .row {
     display: flex;
     flex-direction: column;
@@ -348,13 +391,19 @@ footer {
   .col {
     width: 100%;
   }
-  .cardImg {
+  .card {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  .cardImg,
+  .headline img,
+  .headline {
     object-fit: cover;
     max-width: 350px;
     height: auto;
     vertical-align: middle;
-    border-radius: 5px;
     margin: 0 auto;
+    min-width: 350px;
   }
   .card-gallery {
     flex-basis: 100%;
@@ -362,11 +411,9 @@ footer {
     flex-direction: column;
     margin: 0 auto;
   }
-
   .contentLinks a,
   .show-more-btn {
     max-width: 350px;
-    margin: 0 auto;
   }
   .card h2,
   .headline h2 {
@@ -397,29 +444,33 @@ footer {
   .col {
     width: 100%;
   }
-  .cardImg {
+  .card {
+    max-width: 300px;
+  }
+  .cardImg,
+  .headline img,
+  .headline {
     object-fit: cover;
     max-width: 300px;
     height: auto;
     vertical-align: middle;
-    border-radius: 5px;
-    /* margin: 0 auto; */
+    margin: 0 auto;
+    min-width: 300px;
   }
   .card-gallery {
     flex-basis: 100%;
     display: flex;
     flex-direction: column;
-    /* margin: 0 auto; */
+    margin: 0 auto;
   }
-
   .contentLinks a,
   .show-more-btn {
     max-width: 300px;
-    /* margin: 0 auto; */
   }
   .card h2,
   .headline h2 {
     text-align: left;
+    font-size: 24px;
   }
   footer {
     margin-top: 10px;
