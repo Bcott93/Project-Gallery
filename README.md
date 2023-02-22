@@ -40,7 +40,7 @@ To view the project, please follow the links below:
 
 https://bcott93.github.io/Project-Gallery/
 
-(![Sample of the Application](assets/images/place-holder.jpg))
+![Sample of the Application](assets/images/place-holder.jpg)
 
 ## License
 
