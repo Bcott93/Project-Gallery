@@ -5,26 +5,6 @@ const dateHTML = document.getElementById("date")
 // Attaches the date to the HTML
 dateHTML.append(date)
 
-// Hamburger Menu Variables
-
-
-// function toggleHamburger() {
-//     const hamburgerMenu = document.getElementById('dropdown-content')
-//     const dropBtn = document.getElementById('dropBtn')
-//     dropBtn.addEventListener('click', function(){
-//     if (hamburgerMenu.style.display === "block") {
-//         hamburgerMenu.style.display = "none"
-//     } else {
-//         hamburgerMenu.style.display = "block"
-//     }
-// })
-// }
-
-
-
-
-
-
 // Variables for the show more elements, and sets the initial text of the button
 const showMoreBtns = document.querySelectorAll('.show-more-btn')
 const showMoreContent = document.querySelectorAll('.show-more-content')  
